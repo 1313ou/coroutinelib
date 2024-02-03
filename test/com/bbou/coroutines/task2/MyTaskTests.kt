@@ -5,11 +5,6 @@ import org.testng.annotations.Test
 
 class MyTaskTests {
 
-    var t1 = MyTask()
-    var t2 = MyTask()
-    var b1 = MyBaseTask()
-    var b2 = MyBaseTask()
-
     @Test(expectedExceptions = [IllegalStateException::class])
     fun taskRepeatTest() {
         val t = MyTask()
